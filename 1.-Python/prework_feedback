@@ -1,0 +1,110 @@
+Hi Yuri! 🙋‍♂️ Here I send you some feedback about your prework 😀 
+
+Congratulations, you did a really good job. You showed that you really tried to solve everything and you learned a lot during the proccess. 
+
+On the following lines I will send you some feedback about the prework exercises. Most of the are not about mistakes, they are proposals in case you would like to make changes in your code.
+
+1 - Snail-and-Well
+
+The logic of the exercise is perfect and the result it correct 😀 
+
+It is great that you tried while loops and if loops before. In the case of the while loop, as the days variable is set to 0, it stops after printing the 'hello'. 
+
+In the statement afterwards, it would do the same. I guess you put set it to 5 at some point and therefore it has that result. 
+
+This kind of exercises are very useful to learn more trying new things. 
+
+We encourage you to try to do the bonus, as what you will learn doing it will help you understand important concepts along the bootcamp. 
+
+For the first exercise in the bonus, the logic is the same as in the previous exercise. The difference is that, instead of using `daily_distance` to calculate how much the snail advances, you need to iterate through the advance_cm dictionary to see its progress. 
+
+The change to insert in the code is the following:
+
+``` python
+    snail_position += advance_cm[days]
+```
+In the next exercises, you calculate the max, min and average of the entire list. But in this case it should be calculated over the days it took the snail to get out of the well. Also, keep in mind that the snail slides 20cm, so this should be subtracted from the result. 
+
+Finally, there is a library called Statistics that has a function to calculate the standard deviation. Here I send you some documentation:
+
+[geekforgeeks std documentation](https://www.geeksforgeeks.org/python-statistics-stdev/#:~:text=Statistics%20module%20in%20Python%20provides,rather%20than%20an%20entire%20population.&text=It%20is%20used%20to%20quantify,a%20set%20of%20data%20values.) 
+
+2 - Duel-of-Sorcerers
+
+It is great that you defined a function in the second exercise. Bellow I send you some documentation in case you want to check it. 
+
+[W3 school - functions documentation](https://www.w3schools.com/python/python_functions.asp) 
+[Real Python - function documentation](https://realpython.com/python-return-statement/#:~:text=The%20Python%20return%20statement%20is%20a%20special%20statement%20that%20you,can%20be%20any%20Python%20object.) 
+
+The logic of the exercise is perfect, and so is the result. Again, it is great that you are trying more than one option. 
+
+We encourage you to try to do the bonus. If you do so and have concrete questions, please let me know. 
+
+3 - Bus
+
+All good here. You tried different options and made all of the work 😀 
+
+For the standard deviation in the last exercise, there is a function to calculate it called statistics that allows you to do it using a function. Here I send you some documentation in case you want to check it. 
+
+[geekforgeeks std documentation](https://www.geeksforgeeks.org/python-statistics-stdev/#:~:text=Statistics%20module%20in%20Python%20provides,rather%20than%20an%20entire%20population.&text=It%20is%20used%20to%20quantify,a%20set%20of%20data%20values.) 
+
+4 - Robin-Hood 
+
+Again, great work here. You used `set()` to get the unique points, and the Counter function to count the repeated poins creating a dictionary. Then you also presented all the points 😀  
+
+5 - Temperature-Processor
+
+Everything is correct in this exercise 😀 
+
+As a suggestion, in the seventh exercise you could combine all the consitions using `or`, as all of them have the same result `"Change the cooling system"`. 
+
+```python
+
+if len(temp_70) >= 4 or max_temperature > 80 or avg_temperature > 65:
+    print("Change the cooling system")
+else: 
+    print("You don't need to change the cooling system")
+
+```
+
+If you try to do the bonus exercise and have concrete question, please let me know. 
+
+6 - Rock-Paper-Scissors
+
+Usually we do not send the code with the solutions, but as you did such a thorough work I will send you some examples. 
+
+In the third exercise, when getting the rounds you can the user:
+
+```python
+    n_rounds = input("Please enter the amount of rounds to play. The number must be odd: ")
+
+    while not n_rounds.isdigit() or int(n_rounds) % 2 == 0:
+        print('ERROR: Please enter an odd number: ')
+        n_rounds = input("Please enter the amount of rounds to play. The number must be odd: ")
+    print(f"You will play {n_rounds} rounds.")
+```
+
+This asks the input of the user, and then in the while loop it checks if it is a digit and if it is even. If any of the conditions is met (if it is not a digit or if the digit is even), it will print the error message and ask again until the user enters a valid odd digit. 
+
+Once he or she introduces it, the message with the number of rounds will be printed. 
+
+Then, to calculate the rounds to win you can use the following line. It returns the half plus one, which will always be the number of rounds needed to win:
+
+```python
+rounds_to_win = n_rounds // 2 + 1
+```
+
+In the eleventh exercise, you can check who won more rounds comparing the cpu_score and the player_score. You actually started doing it right with the `cpu_score == player_score` to check the tie. The error appears because you put the I of the `if` in capital letters.
+
+You can create an if statement checking if the cpu_score is higher than player_score, the opposite using an elif, and in the else statement put that it is a tie. 
+
+The logic of the bonus is the same, you just need to add two more gestures and create more combinations. 
+
+In these exercises it is important to use functions, putting the code inside them so you can call them afterwards. Here I send you some documentation about how the functions work. 
+
+[W3 school - functions documentation](https://www.w3schools.com/python/python_functions.asp) 
+[Real Python - function documentation](https://realpython.com/python-return-statement/#:~:text=The%20Python%20return%20statement%20is%20a%20special%20statement%20that%20you,can%20be%20any%20Python%20object.) 
+
+Again, this was a really good prework. You showed us that you tried different ways of solving the problems, which is great. Now enjoy this bootcamp and learn as much as possible 🚀 
+
+<img width=1000 src="./meme_prework.png">
